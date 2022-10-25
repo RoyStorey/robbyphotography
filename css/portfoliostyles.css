@@ -1,0 +1,159 @@
+body {
+  background-color: white;
+  width: 100%;
+  /* min-height: 150vh; */
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-style: italic; */
+}
+
+.heroDiv {
+  /* height: 100vh; */
+  /* background-color: aqua; */
+  margin-top: 10vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column
+}
+
+.heroDivLayer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 6rem;
+  margin-bottom: 0px;
+}
+
+.heroDivLayerP {
+  margin: 0px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.heroDivLayerP p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  /* font-style: italic; */
+  font-size: large;
+  width: 15rem;
+  text-align: center;
+}
+
+.heroDivLayer img:not(:hover) {
+  object-fit: cover;
+  width: 25vw;
+  height: 25vw;
+  /* border-radius: 0px 0px 0px 60%; */
+  /* background-color: #f78c58; */
+  filter: grayscale(.7);
+  transition-duration: .3s;
+}
+
+.heroDivLayer img:hover {
+  filter: none;
+  transition-duration: .3s;
+  width: 30vw;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+.stupidQuoteDiv {
+  background-color: white;
+  height: 50vh;
+  /* border-top: 1px;
+  border-top-color: gray;
+  border-top-style: solid;
+  border-bottom: 1px;
+  border-bottom-color: gray;
+  border-bottom-style: solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stupidQuoteDiv p {
+  /* background-color: aqua; */
+  width: 30%;
+  font-size: 2.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.stupidQuoteDiv p2 {
+  /* background-color: aqua; */
+  width: 30%;
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(73, 73, 73);
+  /* font-style: italic; */
+}
+
+.secondPhoto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.secondPhoto img {
+  width: 50%;
+
+}
+
+.contactRobbyNow {
+  background-color: white;
+  height: 30vh;
+}
+
+.contactRobbyNowDiv {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  flex-direction: column;
+  /* background-image: url(/pics/landscape2.webp); */
+  object-fit: contain;
+}
+
+.contactRobbyNowDiv p {
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0px;
+  font-weight: 100;
+}
+
+.contactRobbyNowDiv p2 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  background-color: #f78c58;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  color: white;
+  font-weight: 100;
+}
+
+.contactRobbyNowDiv a {
+  text-decoration: none;
+}
