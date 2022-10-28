@@ -35,13 +35,6 @@ const headerTaskbar = (
         </a>
       </div>
     </div>
-    {/* <div className="inquireButtonDiv">
-      <div className="inquireButton">
-        <a href="/html/inquire.html">
-          <p>{inquireButton}</p>
-        </a>
-      </div>
-    </div> */}
   </header>
 );
 
