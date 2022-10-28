@@ -12,10 +12,10 @@ const backToTop = "Back to Top ↑"
 const theFooter = (
   <footer>
     <div className="copyright">
-      <p>© Roy 2022 | All Rights Reserved </p>
+      <p>{copyrightByWhom} </p>
     </div>
     <div className="copyright">
-      <p>Back to Top ↑</p>
+      <p>{backToTop}</p>
     </div>
   </footer>
 )
