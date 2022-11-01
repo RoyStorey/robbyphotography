@@ -14,17 +14,16 @@
 //     $uploadOk = 0;
 //   }
 // }
-// require('dashboard\js\addEvent.js');
 
 
 
-// $test = fopen("newfile.json", "a") or die("This is a test!");
-// $txt = '{
-//   "event1": {
-//     "eventName" : "Airshow",
-//     "photosOfEvent" : ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"]
-//   },
-// }';
-// fwrite($test,$txt);
-// fclose($test);
+$test = fopen("events.json", "a") or die("This is a test!");
+$txt = '{
+  "event1": {
+    "eventName" : "Airshow",
+    "photosOfEvent" : ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"]
+  },
+}';
+fwrite($test,$txt);
+fclose($test);
 // ?>

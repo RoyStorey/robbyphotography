@@ -20,20 +20,25 @@ class Event extends React.Component {
 
     }
     handleSubmit(e) {
-        alert('A name was submitted: ' + this.state.eventName);
-        e.preventDefault();
-        console.log("handleSubmit")
-        console.log(this.state.eventName)
-        console.log(this.state.eventDescription)
-        console.log(this.state.eventImages)
-        let eventData = [eventName = this.state.eventName, eventDescription = this.state.eventDescription, eventImages = this.state.eventImages]
-        console.log(eventData)
+        const eventData = [eventName = this.state.eventName, eventDescription = this.state.eventDescription, eventImages = this.state.eventImages];
+        if (this.state.eventName == '' || this.state.eventDescription == '' || this.state.eventImages == '') {
+            alert('Robby, you gotta fill out those fields.');
+            e.preventDefault();
+        } else {
+            alert('An event was created: ' + this.state.eventName);
+            e.preventDefault();
+            console.log("handleSubmit");
+            console.log(this.state.eventName);
+            console.log(this.state.eventDescription);
+            console.log(this.state.eventImages);
+            console.log(eventData);
+        }
     }
 
     render() {
         return (
             <div className="toolProper">
-                <form onSubmit={this.handleSubmit} method="post" encType="multipart/form-data">
+                <form action="\php\upload.php" method="post" encType="multipart/form-data">
                     <p>Event Name*</p>
                     <input type="text" id="eventName" name="eventName" value={this.state.eventName} onChange={this.handleChange} />
                     <p>Event Description*</p>
@@ -48,7 +53,5 @@ class Event extends React.Component {
         )
     }
 }
-
 const root = ReactDOM.createRoot(document.getElementById('addEvent'));
 root.render(<Event />);
-
