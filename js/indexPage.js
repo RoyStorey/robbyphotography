@@ -2,8 +2,8 @@ const root = ReactDOM.createRoot(
   document.getElementById('body')
 );
 
-const heroImage = '/pics/airshow/straightOn.jpg'
-const bottomLeft = 'pics/airshow/5D6A0496.jpg'
+const heroImage = 'pics/bcfc/020A1021.jpg'
+const bottomLeft = 'pics/bcfc/020A0905-2.jpg'
 const bottomRight = 'pics/airshow/5D6A0497.jpg'
 const middleBigText = "One of the influential photographers of our generation"
 const middleSmallText = "Mid-tier Valorant player, could be better."
