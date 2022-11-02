@@ -13,6 +13,14 @@ body {
   src: url('/fonts/Dosis-VariableFont_wght.ttf');
 }
 
+.fullscreen {
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+}
+
 .heroDiv {
   /* height: 100vh; */
   /* background-color: aqua; */
@@ -29,6 +37,7 @@ body {
   justify-content: space-around;
   margin: 2rem 6rem;
   margin-bottom: 0px;
+  flex-wrap: wrap;
 }
 
 .heroDivLayerP {
