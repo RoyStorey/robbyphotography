@@ -26,18 +26,21 @@
             <h1>Contact Ryan Robinson</h1>
             <h3>Please fill out this form to contact Ryan</h3>
           </div>
-          <div class="contactUs">
-            <p>Full Name *</p>
-            <input type="text"></input>
-          </div>
-          <div class="contactUs">
-            <p>E-mail *</p>
-            <input type="text"></input>
-          </div>
-          <div class="contactUs">
-            <p>Message *</p>
-            <input style="height:6rem;" type="text"></input>
-          </div>
+          <form action="/php/push.php" method="post">
+            <div class="contactUs">
+              <p>Full Name *</p>
+              <input type="text" id="fullname" name="fullname"></input>
+            </div>
+            <div class="contactUs">
+              <p>E-mail *</p>
+              <input type="text" id="email" name="email"></input>
+            </div>
+            <div class="contactUs">
+              <p>Message *</p>
+              <textarea style="height:6rem;" id="message" name="message" type="text"></textarea>
+            </div>
+            <input type="submit" value="Inquire" id="inquireButton">
+          </form>
           <div class="contactUs">
             <h4>If Ryan does not reach out within 3 work-days, feel free to reach him at (301) 981-6679</h3>
           </div>

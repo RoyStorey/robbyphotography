@@ -1,50 +1,52 @@
-// const root = ReactDOM.createRoot(
-//     document.getElementById('portfolio')
-// );
-function portfolioFullscreen() {
-    var x = document.getElementById('gallery1');
-    if (x.style.width == "90vw") {
-    } else {
-        x.style.width = "90vw";
-        x.style.height = "90vh";
-    }
+const root = ReactDOM.createRoot(
+    document.getElementById('body')
+);
 
+// ROWS ARE OBJECTS TOO!
+const fetchImages = async function () {
+    let response = await fetch("/api/images.php", { method: "GET" });
+    console.log(response, response.data);
+    return response;
+}
+console.log(fetchImages(), fetchImages().data)
+
+let imageTiles = [];
+let events = {
+    "event1": {
+        "name": "Airshow"
+    },
+    "event2": {
+        "name": "Wedding"
+    }
+};
+
+
+function imageTile(event) {
+
+
+    return (
+        <div className="picAndTextContainer">
+            {/* Event THUMBNAIL */}
+            {/* <img src={event.image} id="gallery1"></img> */}
+            {/* Event NAME */}
+            <p>{event.name}</p>
+        </div>
+    )
+};
+
+for (let event of Object.values(events)) {
+    imageTiles.push(imageTile(event))
 }
 
+const portfolioBody = (
+
+    <div className="heroDiv">
+        <div className="heroDivLayer">
+            {imageTiles}
+        </div>
+    </div>
 
 
-// const portfolioPage = (
+);
 
-//     <div class="heroDiv">
-
-
-
-
-//         <div class="heroDivLayer" style="margin-top:4rem;">
-//             <div class="picAndTextContainer">
-//                 <img src="/pics/bcfc/020A0188.jpg" />
-//                 <p>This is a piece of text</p>
-//             </div>
-//             <div class="picAndTextContainer">
-//                 <img src="/pics/bcfc/020A0560.jpg" />
-//                 <p>This is a piece of text</p>
-//             </div>
-//             <div class="picAndTextContainer">
-//                 <img src="/pics/christmas2021/020A3312.jpg" />
-//                 <p>This is a piece of text</p>
-//             </div>
-//             <div class="picAndTextContainer">
-//                 <img src="/pics/christmas2021/020A3312.jpg" />
-//                 <p>This is a piece of text</p>
-//             </div>
-//             <div class="picAndTextContainer">
-//                 <img src="/pics/christmas2021/020A3312.jpg" />
-//                 <p>This is a piece of text</p>
-//             </div>
-
-
-//         </div>
-//     </div>
-// )
-
-// root.render(portfolioPage);
+root.render(portfolioBody);

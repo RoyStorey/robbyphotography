@@ -44,6 +44,14 @@ body {
   flex-direction: column;
 }
 
+.inquireSection form {
+  width: 100%;
+}
+
+#inquireButton {
+  margin: 16px 0px;
+}
+
 .contactUs {
   display: flex;
   /* background-color: gray; */
