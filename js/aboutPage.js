@@ -10,7 +10,7 @@ const aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 
 const aboutPage = (
   <div><div className="heroImage">
-    <img src={heroImage}></img>
+    <img loading="eager" src={heroImage}></img>
   </div>
     <div className=" aboutBody">
       <div className="aboutRobbyHeader">
@@ -21,7 +21,7 @@ const aboutPage = (
           <p>{aboutText}</p>
         </div>
         <div className="aboutRobbyPicture">
-          <img src={bottomRightImage}></img>
+          <img loading="lazy" src={bottomRightImage}></img>
         </div>
       </div>
     </div>

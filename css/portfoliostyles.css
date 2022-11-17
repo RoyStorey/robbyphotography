@@ -183,3 +183,11 @@ body {
 .contactRobbyNowDiv a {
   text-decoration: none;
 }
+
+.modal {
+  z-index: 1;
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  pointer-events: none;
+}

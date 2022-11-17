@@ -18,19 +18,19 @@ const headerTaskbar = (
     </div>
     <div className="headerIcons">
       <div className="headerIcon">
-        <a href="/index.html">
+        <a href="dashboard.html">
           <p>{headerIconOne}</p>
         </a>
       </div>
 
       <div className="headerIcon">
-        <a href="/html/about.html">
+        <a href="inquirydashboard.html">
           <p>{headerIconTwo}</p>
         </a>
       </div>
 
       <div className="headerIcon">
-        <a href="/html/portfolio.html">
+        <a href="dashboard.html">
           <p>{headerIconThree}</p>
         </a>
       </div>
